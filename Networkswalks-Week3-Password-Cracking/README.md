@@ -9,6 +9,7 @@ As part of Week 3 of my Networkwalks Cybersecurity Internship (Batch B084E), I p
 The project focused on PDF password hash extraction, dictionary attacks, wordlist usage, and password recovery using command-line and browser-based security tools.
 
 2. Module 1 – Password Cracking Using John the Ripper (JTR)
+<img width="1600" height="768" alt="image" src="https://github.com/user-attachments/assets/1c7886fc-d6a0-4a42-bcd0-c87856e5c1d4" />
 
 Tools Used:
 
