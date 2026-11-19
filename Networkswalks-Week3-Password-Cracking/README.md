@@ -4,93 +4,137 @@ Cybersecurity Internship | Batch B084E
 
 1. Project Overview
 
-As part of Week 3 of my Networkwalks Cybersecurity Internship (Batch B084E), I performed practical exercises on password security and password recovery.
+As part of Week 3 of my Networkwalks Cybersecurity Internship, I performed practical exercises related to PDF password security and password recovery.
 
-The project focused on PDF password hash extraction, dictionary attacks, wordlist usage, and password recovery using command-line and browser-based security tools.
+The activities focused on PDF hash extraction, dictionary attacks, wordlist testing, and browser-based password recovery tools.
 
 2. Module 1 – Password Cracking Using John the Ripper (JTR)
-<img width="1600" height="768" alt="image" src="https://github.com/user-attachments/assets/1c7886fc-d6a0-4a42-bcd0-c87856e5c1d4" />
 
-Tools Used:
+Objective
+
+To understand PDF password hash extraction and password cracking using John the Ripper in Kali Linux.
+
+Tools Used
 
 - Kali Linux
-- John the Ripper (JTR)
+- John the Ripper
 - pdf2john
-- RockYou Wordlist
+- rockyou.txt wordlist
+- Oracle VirtualBox
 
-Activities Performed:
+Steps Performed
 
 1. Verified the John the Ripper installation.
-2. Selected a password-protected PDF file.
-3. Extracted the PDF password hash using "pdf2john".
-4. Stored the extracted hash in "hash1.txt".
-5. Executed John the Ripper using a wordlist.
-6. Displayed the recovered password using "john --show".
-7. Verified the result by opening the protected PDF.
+2. Located the password-protected PDF file.
+3. Extracted the PDF hash using "pdf2john".
+4. Saved the extracted hash in "hash1.txt".
+5. Used the "rockyou.txt" wordlist to perform a dictionary attack.
+6. Verified the result using "john --show".
 
-Result: Successfully recovered the test PDF password and opened the protected document.
+Commands Used
 
-3. Module 2 – Password Cracking Using Networkwalks Tools
+1. Verify John the Ripper
 
-Tools Used:
+john
+
+2. Locate pdf2john
+
+locate pdf2john
+
+3. Extract the PDF hash
+
+pdf2john "My Locked PDF1.pdf" > hash1.txt
+
+4. Perform dictionary attack
+
+john --wordlist=/usr/share/wordlists/rockyou.txt hash1.txt
+
+5. Display the cracking result
+
+john --show hash1.txt
+
+Practical Screenshots
+
+1. John the Ripper Version
+
+<img width="1600" height="768" alt="MODULE-1-01-JTR-Version" src="https://github.com/user-attachments/assets/f79c6539-e0a2-4a6e-8ec5-c0869c3fadbb" />
+
+
+2. PDF Hash Extraction
+
+<img width="1600" height="768" alt="MODULE-1-02-PDF-Hash-Extraction" src="https://github.com/user-attachments/assets/45b17e6b-14ec-4704-9391-d578937ed36d" />
+
+
+3. Successful Password Cracking Result
+
+<img width="1600" height="768" alt="MODULE-1-03-Success-Result" src="https://github.com/user-attachments/assets/182f0c0c-9a70-4c04-b23a-eb483c510527" />
+
+
+Result
+
+Successfully cracked the password of the test PDF using John the Ripper and verified the result.
+
+3. Module 2 – Password Cracking Using Networkwalks Online Tools
+
+Objective
+
+To practise PDF hash generation and password recovery using Networkwalks online tools.
+
+Tools Used
 
 - Networkwalks Hash Calculator
 - Networkwalks Password Cracker
-- Kali Linux
 - Firefox Browser
 
-Activities Performed:
+Steps Performed
 
 1. Opened the Networkwalks Hash Calculator.
-2. Uploaded the password-protected PDF.
-3. Generated and copied the PDF password hash.
-4. Submitted the hash to the Networkwalks Password Cracker.
-5. Tested password recovery using the built-in wordlist.
-6. The initial 100-password wordlist did not find a match.
-7. Continued with the second PDF exercise.
+2. Uploaded the password-protected PDF file.
+3. Generated a crackable PDF hash.
+4. Copied the generated hash.
+5. Opened the Networkwalks Password Cracker.
+6. Submitted the hash and started the password recovery process.
+7. Tested the available built-in wordlist.
 
-Result: Practised PDF hash generation and browser-based password recovery.
+Practical Screenshots
 
-4. Technical Concepts Learned
+1. PDF Hash Generation
 
-- Password hashing
-- PDF password protection
-- Hash extraction
-- Dictionary attacks
-- Wordlist-based password testing
-- Password recovery techniques
-- Password security best practices
+<img width="1600" height="768" alt="MODULE-2-Hash-Calculator" src="https://github.com/user-attachments/assets/4362085b-70e4-4969-b4c7-d136c9c2498b" />
 
-5. Skills Gained
 
-- Kali Linux command-line operations
-- Basic password security analysis
-- John the Ripper
-- Hash extraction using pdf2john
-- Security tool usage
-- Technical documentation
+2. Password Cracker Result
+<img width="1600" height="768" alt="MODULE-2-Password-Cracker" src="https://github.com/user-attachments/assets/4941fe95-ef4f-42b3-94e7-b066629e4240" />
 
-6. Internship Details
 
-Category| Details
-Organization| Networkwalks
-Batch Number| B084E
-Week| Week 3
-Project| Password Cracking
-Environment| Kali Linux
 
-7. Ethical Considerations
+Result
 
-All activities were performed for educational purposes in an authorized lab environment using test PDF files. Password testing tools should only be used on files and systems for which permission has been granted.
+Successfully generated a PDF hash using the Networkwalks Hash Calculator. The initial built-in wordlist containing 100 passwords did not find a match. This exercise provided practical experience with browser-based hash generation and wordlist-based password testing.
 
-8. Conclusion
+4. Key Learning Outcomes
 
-This project provided practical knowledge of PDF password security, hash extraction, and dictionary-based password attacks. It improved my understanding of password recovery techniques and the importance of using strong passwords.
+- Understood PDF password protection and hash extraction.
+- Learned the working process of John the Ripper.
+- Practised dictionary-based password attacks.
+- Gained experience in PDF hash generation.
+- Explored browser-based password recovery tools.
+- Understood the importance of strong password security.
 
-Author
+5. Conclusion
+
+The Week 3 practical exercises provided hands-on experience with PDF password security and password recovery techniques using John the Ripper and Networkwalks online tools.
+
+These activities improved my understanding of hash extraction, dictionary attacks, wordlist testing, and password protection.
+
+6. Author
 
 Dharshini R P
 
 Cybersecurity Student
 
-LinkedIn: https://www.linkedin.com/in/iamdharshini/
+LinkedIn: "Dharshini R P" (https://www.linkedin.com/in/iamdharshini/)
+
+Networkwalks Cybersecurity Internship | Batch B084E
+
+
